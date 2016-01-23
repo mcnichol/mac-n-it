@@ -26,6 +26,7 @@ echo "Installing Commandline Toolset"
 brew install wget
 
 echo "Installing Application Toolset"
+brew cask install iterm2
 brew cask install google-chrome 
 brew cask install skype 
 brew cask install vlc 
