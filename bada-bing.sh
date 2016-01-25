@@ -45,21 +45,53 @@ else
 fi
 
 newsect "Installing Homebrew - The Missing Package Manager for Mac"
+msg "Installing Homebrew - The Missing Package Manager for Mac"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+msg "Setting up brew Cask for App Management/Install"
+brew tap caskroom/cask
 
 newsect "Installing Commandline Toolset"
 brew install wget
 
 newsect "Installing Application Toolset"
-brew cask install iterm2
+
+#Development and System Tools
+brew cask install eterm2
+brew cask install brackets
+
+#Web Tools
 brew cask install google-chrome 
+brew cask install firefox
+
+#Business Tools
+brew cask install libreoffice
+brew cask install cyberduck
+brew cask install nylas-n1
+
+#Communication Tools
 brew cask install skype 
-brew cask install vlc 
-brew cask install handbrake 
-brew cask install spotify 
+
+#Storage Related Tools
 brew cask install dropbox 
 brew cask install the-unarchiver
 
+#Video Tools
+brew cask install vlc 
+brew cask install handbrake 
+
+#Audio Related Tools
+brew cask install audacity
+
+#Image editing Tools
+brew cask install gimp
+brew cask install darktable
+brew cask install inkscape
+
+#3D Tools
+brew cask install blender
+
+#Leisure Tools
+brew cask install spotify 
+
 msg "Looks like my job is done here....back to you Python"
-
-
