@@ -1,28 +1,7 @@
 #!/bin/bash
-
-msg(){
-    if [ -n "$2" ]; then
-	echo $2"Bash:\t$1 $NO_COLOUR"
-    else 
-	echo $WHITE"Bash:\t$1 $NO_COLOUR"
-    fi
-}
-
-newsect(){
-    echo ""
-    msg "$1" $GREEN
-}
-
-BLUE="\x1b[0;34m"
-RED="\x1b[0;31m"
-GREEN="\x1b[0;32m"
-YELLOW="\x1b[1;33m"
-WHITE="\x1b[1;37m"
-LIGHT_RED="\x1b[1;31m"
-LIGHT_GREEN="\x1b[1;32m"
-LIGHT_BLUE="\x1b[1;34m"
-LIGHT_CYAN="\x1b[1;36m"
-NO_COLOUR="\x1b[0m"
+#Sourcing Script Settings and Functions
+source ./config/common.functions
+source ./config/common.config
 
 msg "Got the ball.  Let's get Rolling"
 
@@ -96,5 +75,13 @@ brew cask install blender
 
 #Leisure Tools
 brew cask install spotify 
+
+newsect "Updating Brew and Casks"
+brew cask update
+brew update
+
+msg "Cleaning up Brew and Casks"
+brew cask cleanup
+brew cleanup
 
 msg "Looks like my job is done here....back to you Python"

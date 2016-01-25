@@ -11,7 +11,7 @@ def main():
 
 def execScript():
     try: 
-        subprocess.call('./bada-bing.sh',shell=True)
+        subprocess.call('./scripts/bada-bing.sh',shell=True)
     except OSError as e:
 	print "What we've got here is a failure to communicate. ~ This Script"
 	print "Sadly there was an error.  Hopefully you are smart enough to fix it"
