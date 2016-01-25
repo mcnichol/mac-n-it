@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 msg(){
     if [ -n "$2" ]; then
@@ -44,12 +44,15 @@ else
   msg "Xcode CLI tools OK"
 fi
 
-newsect "Installing Homebrew - The Missing Package Manager for Mac"
+newsect "Installing Package Management Tools"
 msg "Installing Homebrew - The Missing Package Manager for Mac"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 msg "Setting up brew Cask for App Management/Install"
 brew tap caskroom/cask
+
+msg "Setting up Node & NPM"
+source ./plugins/node.plugin
 
 newsect "Installing Commandline Toolset"
 brew install wget
@@ -57,7 +60,7 @@ brew install wget
 newsect "Installing Application Toolset"
 
 #Development and System Tools
-brew cask install eterm2
+brew cask install iterm2
 brew cask install brackets
 
 #Web Tools
