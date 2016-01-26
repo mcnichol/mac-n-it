@@ -24,6 +24,8 @@ else
 fi
 
 newsect "Installing Package Management Tools"
+source ./scripts/python-setup.sh
+
 msg "Installing Homebrew - The Missing Package Manager for Mac"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -35,6 +37,7 @@ source ./plugins/node.plugin
 
 newsect "Installing Commandline Toolset"
 brew install wget
+source ./plugins/taskwarrior.plugin
 
 newsect "Installing Application Toolset"
 
@@ -74,7 +77,7 @@ brew cask install inkscape
 brew cask install blender
 
 #Leisure Tools
-brew cask install spotify 
+source ./plugins/spotify.plugin
 
 newsect "Updating Brew and Casks"
 brew cask update

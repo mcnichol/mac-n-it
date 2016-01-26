@@ -4,12 +4,16 @@
 import subprocess
 
 def main():
-    print "Python:\tHandoff to Bash"
+    makeFS()	
     execScript()
     print "Python:\tLooks like I'm done here...Python Out"
     return 
 
+def makeFS():
+    print ""
+
 def execScript():
+    print "Python:\tHandoff to Bash"
     try: 
         subprocess.call('./scripts/bada-bing.sh',shell=True)
     except OSError as e:
