@@ -39,7 +39,10 @@ newsect "Installing Application Toolset"
 source ./plugins/iterm2.plugin
 source ./plugins/brackets.plugin
 
-#Web Tools
+#Networking/Analyze  Tools
+source ./plugins/wireshark.plugin
+
+#Web User Tools
 source ./plugins/google-chrome.plugin
 source ./plugins/firefox.plugin
 
