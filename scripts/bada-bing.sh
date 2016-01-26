@@ -44,41 +44,36 @@ source ./plugins/google-chrome.plugin
 source ./plugins/firefox.plugin
 
 #Business Tools
-brew cask install libreoffice
-brew cask install cyberduck
-brew cask install nylas-n1
+source ./plugins/libreoffice.plugin
+source ./plugins/cyberduck.plugin
+source ./plugins/nylas-n1.plugin
 
 #Communication Tools
-brew cask install skype 
+source ./plugins/skype.plugin
 
 #Storage Related Tools
-brew cask install dropbox 
-brew cask install the-unarchiver
+source ./plugins/dropbox.plugin
+source ./plugins/the-unarchiver.plugin
 
 #Video Tools
-brew cask install vlc 
-brew cask install handbrake 
+source ./plugins/vlc.plugin
+source ./plugins/handbrake.plugin
 
 #Audio Related Tools
-brew cask install audacity
+source ./plugins/audacity.plugin
 
 #Image editing Tools
-brew cask install gimp
-brew cask install darktable
-brew cask install inkscape
+source ./plugins/gimp.plugin
+source ./plugins/darktable.plugin
+source ./plugins/inkscape.plugin
 
 #3D Tools
-brew cask install blender
+source ./plugin/blender.plugin
 
 #Leisure Tools
 source ./plugins/spotify.plugin
 
-newsect "Updating Brew and Casks"
-brew cask update
-brew update
-
-msg "Cleaning up Brew and Casks"
-brew cask cleanup
-brew cleanup
+newsect "Brew && Cask Cleanup Operations"
+source ./scripts/brew-cleanup.sh
 
 msg "Looks like my job is done here....back to you Python"
