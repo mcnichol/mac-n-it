@@ -37,7 +37,7 @@ source ./plugins/taskwarrior.plugin
 newsect "Installing Application Toolset"
 #Development and System Tools
 source ./plugins/iterm2.plugin
-brew cask install brackets
+source ./plugins/brackets.plugin
 
 #Web Tools
 brew cask install google-chrome 
