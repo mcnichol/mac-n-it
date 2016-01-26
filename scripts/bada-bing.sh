@@ -40,8 +40,8 @@ source ./plugins/iterm2.plugin
 source ./plugins/brackets.plugin
 
 #Web Tools
-brew cask install google-chrome 
-brew cask install firefox
+source ./plugins/google-chrome.plugin
+source ./plugins/firefox.plugin
 
 #Business Tools
 brew cask install libreoffice
