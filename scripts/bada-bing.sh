@@ -23,26 +23,20 @@ else
   msg "Xcode CLI tools OK"
 fi
 
-newsect "Installing Package Management Tools"
+newsect "Installing Package Managers"
 source ./scripts/python-setup.sh
-
-msg "Installing Homebrew - The Missing Package Manager for Mac"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-msg "Setting up brew Cask for App Management/Install"
-brew tap caskroom/cask
-
-msg "Setting up Node & NPM"
-source ./plugins/node.plugin
+source ./scripts/homebrew-setup.sh
+source ./scripts/nvm-setup.sh
+source ./scripts/rvm-setup.sh
 
 newsect "Installing Commandline Toolset"
-brew install wget
+source ./plugins/node.plugin
+source ./plugins/wget.plugin
 source ./plugins/taskwarrior.plugin
 
 newsect "Installing Application Toolset"
-
 #Development and System Tools
-brew cask install iterm2
+source ./plugins/iterm2.plugin
 brew cask install brackets
 
 #Web Tools
