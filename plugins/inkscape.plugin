@@ -1,0 +1,4 @@
+#!/usr/bash
+
+brew cask install xquartz
+brew cask install inkscape

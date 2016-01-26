@@ -68,7 +68,7 @@ source ./plugins/darktable.plugin
 source ./plugins/inkscape.plugin
 
 #3D Tools
-source ./plugin/blender.plugin
+source ./plugins/blender.plugin
 
 #Leisure Tools
 source ./plugins/spotify.plugin
