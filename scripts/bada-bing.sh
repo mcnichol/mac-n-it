@@ -24,57 +24,59 @@ else
 fi
 
 newsect "Installing Package Managers"
-source ./scripts/python-setup.sh
 source ./scripts/homebrew-setup.sh
 source ./scripts/nvm-setup.sh
+source ./scripts/python-setup.sh
 source ./scripts/rvm-setup.sh
 
 newsect "Installing Commandline Toolset"
 source ./plugins/node.plugin
-source ./plugins/wget.plugin
 source ./plugins/taskwarrior.plugin
+source ./plugins/wget.plugin
 
 newsect "Installing Application Toolset"
-#Development and System Tools
-source ./plugins/iterm2.plugin
-source ./plugins/brackets.plugin
 
-#Networking/Analyze  Tools
-source ./plugins/wireshark.plugin
+#3D Tools
+source ./plugins/blender.plugin
 
-#Web User Tools
-source ./plugins/google-chrome.plugin
-source ./plugins/firefox.plugin
+#Audio Related Tools
+source ./plugins/audacity.plugin
 
 #Business Tools
-source ./plugins/libreoffice.plugin
+source ./plugins/citrix-receiver.plugin
 source ./plugins/cyberduck.plugin
+source ./plugins/libreoffice.plugin
 source ./plugins/nylas-n1.plugin
 
 #Communication Tools
 source ./plugins/skype.plugin
+
+#Development and System Tools
+source ./plugins/brackets.plugin
+source ./plugins/iterm2.plugin
+
+#Image editing Tools
+source ./plugins/darktable.plugin
+source ./plugins/gimp.plugin
+source ./plugins/inkscape.plugin
+
+#Leisure Tools
+source ./plugins/spotify.plugin
+
+#Networking/Analyze  Tools
+source ./plugins/wireshark.plugin
 
 #Storage Related Tools
 source ./plugins/dropbox.plugin
 source ./plugins/the-unarchiver.plugin
 
 #Video Tools
-source ./plugins/vlc.plugin
 source ./plugins/handbrake.plugin
+source ./plugins/vlc.plugin
 
-#Audio Related Tools
-source ./plugins/audacity.plugin
-
-#Image editing Tools
-source ./plugins/gimp.plugin
-source ./plugins/darktable.plugin
-source ./plugins/inkscape.plugin
-
-#3D Tools
-source ./plugins/blender.plugin
-
-#Leisure Tools
-source ./plugins/spotify.plugin
+#Web User Tools
+source ./plugins/firefox.plugin
+source ./plugins/google-chrome.plugin
 
 newsect "Brew && Cask Cleanup Operations"
 source ./scripts/brew-cleanup.sh
