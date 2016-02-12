@@ -35,7 +35,6 @@ source ./plugins/taskwarrior.plugin
 source ./plugins/wget.plugin
 
 newsect "Installing Application Toolset"
-
 #3D Tools
 source ./plugins/blender.plugin
 
@@ -52,6 +51,7 @@ source ./plugins/nylas-n1.plugin
 source ./plugins/skype.plugin
 
 #Development and System Tools
+source ./plugins/android-studio.plugin
 source ./plugins/brackets.plugin
 source ./plugins/iterm2.plugin
 
@@ -67,9 +67,9 @@ source ./plugins/spotify.plugin
 source ./plugins/wireshark.plugin
 
 #Storage Related Tools
+source ./plugins/android-file-transfer.plugin
 source ./plugins/dropbox.plugin
 source ./plugins/the-unarchiver.plugin
-source ./plugins/android-file-transfer.plugin
 
 #Video Tools
 source ./plugins/handbrake.plugin
