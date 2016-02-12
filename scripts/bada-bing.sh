@@ -69,6 +69,7 @@ source ./plugins/wireshark.plugin
 #Storage Related Tools
 source ./plugins/dropbox.plugin
 source ./plugins/the-unarchiver.plugin
+source ./plugins/android-file-transfer.plugin
 
 #Video Tools
 source ./plugins/handbrake.plugin
