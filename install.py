@@ -15,7 +15,7 @@ def makeFS():
 def execScript():
     print "Python:\tHandoff to Bash"
     try:
-        subprocess.call('./scripts/setup.sh',shell=True)
+        subprocess.call('./scripts/bash-setup.sh',shell=True)
     except OSError as e:
 	print "What we've got here is a failure to communicate. ~ This Script"
 	print "Sadly there was an error.  Hopefully you are smart enough to fix it"
