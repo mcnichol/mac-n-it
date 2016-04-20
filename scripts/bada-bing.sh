@@ -34,6 +34,9 @@ source ./plugins/node.plugin
 source ./plugins/taskwarrior.plugin
 source ./plugins/wget.plugin
 
+newsect "Environment and Dependency Related"
+source ./plugins/java.plugin
+
 newsect "Installing Application Toolset"
 #3D Tools
 source ./plugins/blender.plugin
@@ -52,8 +55,10 @@ source ./plugins/skype.plugin
 
 #Development and System Tools
 source ./plugins/android-studio.plugin
+source ./plugins/arduino.plugin
 source ./plugins/brackets.plugin
 source ./plugins/iterm2.plugin
+source ./plugins/vim.plugin
 
 #Image editing Tools
 source ./plugins/darktable.plugin
