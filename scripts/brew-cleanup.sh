@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/env bash
 
 msg "Updating Files"
 brew cask update

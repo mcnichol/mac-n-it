@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #Sourcing Script Settings and Functions
 source ./config/common.functions
 source ./config/common.config

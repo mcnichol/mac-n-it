@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/env bash
 
 msg "Installing Homebrew - The Missing Package Manager for Mac"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
