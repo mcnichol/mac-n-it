@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+echo "Starting $1"
+cwd=$1
+
 #Sourcing Script Settings and Functions
-source ./config/common.functions
-source ./config/common.config
+source "$cwd/config/common.functions"
+source "$cwd/config/common.config"
 
 msg "Got the ball.  Let's get Rolling"
 
@@ -25,68 +28,68 @@ else
 fi
 
 newsect "Installing Package Managers"
-source ./scripts/homebrew-setup.sh
-source ./scripts/nvm-setup.sh
-source ./scripts/python-setup.sh
-source ./scripts/rvm-setup.sh
+source "$cwd/scripts/homebrew-setup.sh"
+source "$cwd/scripts/nvm-setup.sh"
+source "$cwd/scripts/python-setup.sh"
+source "$cwd/scripts/rvm-setup.sh"
 
 newsect "Installing Commandline Toolset"
-source ./plugins/node.plugin
-source ./plugins/taskwarrior.plugin
-source ./plugins/wget.plugin
+source "$cwd/plugins/node.sh"
+source "$cwd/plugins/taskwarrior.sh"
+source "$cwd/plugins/wget.sh"
 
 newsect "Environment and Dependency Related"
-source ./plugins/java.plugin
-source ./plugins/android-sdk.plugin
+source "$cwd/plugins/java.sh"
+source "$cwd/plugins/android-sdk.sh"
 
 newsect "Installing Application Toolset"
 #3D Tools
-source ./plugins/blender.plugin
-source ./plugins/audacity.plugin
+source "$cwd/plugins/blender.sh"
+source "$cwd/plugins/audacity.sh"
 
 #Business Tools
-source ./plugins/citrix-receiver.plugin
-source ./plugins/cyberduck.plugin
-source ./plugins/libreoffice.plugin
-source ./plugins/nylas-n1.plugin
+source "$cwd/plugins/citrix-receiver.sh"
+source "$cwd/plugins/cyberduck.sh"
+source "$cwd/plugins/libreoffice.sh"
+source "$cwd/plugins/nylas-n1.sh"
 
 #Communication Tools
-source ./plugins/skype.plugin
+source "$cwd/plugins/skype.sh"
 
 #Development and System Tools
-source ./plugins/android-studio.plugin
-source ./plugins/arduino.plugin
-source ./plugins/brackets.plugin
-source ./plugins/docker.plugin
-source ./plugins/iterm2.plugin
-source ./plugins/vim.plugin
-source ./plugins/virtualbox.plugin
+source "$cwd/plugins/android-studio.sh"
+source "$cwd/plugins/arduino.sh"
+source "$cwd/plugins/brackets.sh"
+source "$cwd/plugins/docker.sh"
+source "$cwd/plugins/iterm2.sh"
+source "$cwd/plugins/vim.sh"
+source "$cwd/plugins/virtualbox.sh"
 
 #Image editing Tools
-source ./plugins/darktable.plugin
-source ./plugins/gimp.plugin
-source ./plugins/inkscape.plugin
+source "$cwd/plugins/darktable.sh"
+source "$cwd/plugins/gimp.sh"
+source "$cwd/plugins/inkscape.sh"
 
 #Leisure Tools
-source ./plugins/spotify.plugin
+source "$cwd/plugins/spotify.sh"
 
 #Networking/Analyze  Tools
-source ./plugins/wireshark.plugin
+source "$cwd/plugins/wireshark.sh"
 
 #Storage Related Tools
-source ./plugins/android-file-transfer.plugin
-source ./plugins/dropbox.plugin
-source ./plugins/the-unarchiver.plugin
+source "$cwd/plugins/android-file-transfer.sh"
+source "$cwd/plugins/dropbox.sh"
+source "$cwd/plugins/the-unarchiver.sh"
 
 #Video Tools
-source ./plugins/handbrake.plugin
-source ./plugins/vlc.plugin
+source "$cwd/plugins/handbrake.sh"
+source "$cwd/plugins/vlc.sh"
 
 #Web User Tools
-source ./plugins/firefox.plugin
-source ./plugins/google-chrome.plugin
+source "$cwd/plugins/firefox.sh"
+source "$cwd/plugins/google-chrome.sh"
 
 newsect "Brew && Cask Cleanup Operations"
-source ./scripts/brew-cleanup.sh
+source "$cwd/scripts/homebrew-cleanup.sh"
 
 msg "Looks like my job is done here....back to you Python"
