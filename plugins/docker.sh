@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-brew cask install dockertoolbox
+brew cask install docker-toolbox
