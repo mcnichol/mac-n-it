@@ -2,4 +2,4 @@
 
 brew cask install iterm2
 
-cp $RESOURCES/com.googlecode.iterm2.plist ~/Library/Preferences
+cp $RESOURCE_FOLDER/plist/com.googlecode.iterm2.plist ~/Library/Preferences
