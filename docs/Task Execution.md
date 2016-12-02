@@ -16,3 +16,6 @@ Terminal Stuff:
     - Default username: git config —global user.name “${yourName}”
     - Default email: git config —global user.email “${yourEmail}” 
 Application Stuff:
+
+
+- Check out Pivotal Git Scripts
