@@ -5,6 +5,8 @@ brew install git
 git config --global core.editor /usr/bin/vim
 git config --global transfer.fsckobjects true
 
+git config --global user.email "mcnichol.m@gmail.com"
+git config --global user.name "mcnichol"
 git config --global alias.st status
 git config --global alias.di diff
 git config --global alias.co checkout
