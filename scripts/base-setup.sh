@@ -47,6 +47,7 @@ newsect "Installing Commandline Toolset"
 source "${PLUGIN_FOLDER}/taskwarrior.sh"
 source "${PLUGIN_FOLDER}/wget.sh"
 source "${PLUGIN_FOLDER}/git.sh"
+source "${PLUGIN_FOLDER}/tig.sh"
 
 #newsect "Environment and Dependency Related"
 #source "${PLUGIN_FOLDER}/java.sh"
