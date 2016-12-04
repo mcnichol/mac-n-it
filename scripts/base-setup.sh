@@ -15,26 +15,9 @@ msg "Caching password..."
 sudo -K
 sudo true;
 
-# set menu clock
-# see http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
-defaults write com.apple.menuextra.clock "DateFormat" 'EEE MMM d  h:mm:ss a'
-killall SystemUIServer
+source "${SCRIPT_FOLDER}/base-dependencies.sh"
 
-# hide the dock
-defaults write com.apple.dock autohide -bool true
-killall Dock
-
-# fast key repeat rate, requires reboot to take effect
-defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
-defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
-
-# set finder to display full path in title bar
-defaults write com.apple.finder '_FXShowPosixPathInTitle' -bool true
-
-# stop Photos from opening automatically
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-#to revert use defaults -currentHost delete com.apple.ImageCapture disableHotPlug
-
+source "${SCRIPT_FOLDER}/osx-setup.sh"
 source "${SCRIPT_FOLDER}/bash-setup.sh"
 
 newsect "Installing Package Managers"
@@ -46,14 +29,18 @@ source "${SCRIPT_FOLDER}/rvm-setup.sh"
 newsect "Installing Commandline Toolset"
 source "${PLUGIN_FOLDER}/taskwarrior.sh"
 source "${PLUGIN_FOLDER}/wget.sh"
-source "${PLUGIN_FOLDER}/git.sh"
-source "${PLUGIN_FOLDER}/tig.sh"
 
-#newsect "Environment and Dependency Related"
-#source "${PLUGIN_FOLDER}/java.sh"
-#source "${PLUGIN_FOLDER}/android-sdk.sh"
-#
-#newsect "Installing Application Toolset"
+
+newsect "Environment and Dependency Related"
+source "${PLUGIN_FOLDER}/java.sh"
+source "${PLUGIN_FOLDER}/android-sdk.sh"
+
+newsect "Installing Application Toolset"
+
+##Productivity Tools
+source "${PLUGIN_FOLDER}/shift-it.sh"
+source "${PLUGIN_FOLDER}/flycut.sh"
+
 ##3D Tools
 #source "${PLUGIN_FOLDER}/blender.sh"
 #source "${PLUGIN_FOLDER}/audacity.sh"

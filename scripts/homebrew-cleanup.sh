@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+msg "Cleaning Up Homebrew Tasks"
+
 msg "Updating Files"
 brew update
 brew cask update

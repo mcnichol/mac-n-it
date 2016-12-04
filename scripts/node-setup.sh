@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+msg "Setting up Node Environment"
 brew install node
 
 npm install --global yo
