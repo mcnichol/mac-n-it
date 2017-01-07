@@ -58,10 +58,10 @@ source "${PLUGIN_FOLDER}/flycut.sh"
 #source "${PLUGIN_FOLDER}/android-studio.sh"
 #source "${PLUGIN_FOLDER}/arduino.sh"
 #source "${PLUGIN_FOLDER}/brackets.sh"
-#source "${PLUGIN_FOLDER}/docker.sh"
-#source "${PLUGIN_FOLDER}/iterm2.sh"
-#source "${PLUGIN_FOLDER}/vim.sh"
-#source "${PLUGIN_FOLDER}/virtualbox.sh"
+source "${PLUGIN_FOLDER}/docker.sh"
+source "${PLUGIN_FOLDER}/iterm2.sh"
+source "${PLUGIN_FOLDER}/vim.sh"
+source "${PLUGIN_FOLDER}/virtualbox.sh"
 #
 ##Image editing Tools
 #source "${PLUGIN_FOLDER}/darktable.sh"
@@ -76,16 +76,16 @@ source "${PLUGIN_FOLDER}/flycut.sh"
 #
 ##Storage Related Tools
 #source "${PLUGIN_FOLDER}/android-file-transfer.sh"
-#source "${PLUGIN_FOLDER}/dropbox.sh"
+source "${PLUGIN_FOLDER}/dropbox.sh"
 #source "${PLUGIN_FOLDER}/the-unarchiver.sh"
 #
 ##Video Tools
 #source "${PLUGIN_FOLDER}/handbrake.sh"
-#source "${PLUGIN_FOLDER}/vlc.sh"
+source "${PLUGIN_FOLDER}/vlc.sh"
 #
 ##Web User Tools
-#source "${PLUGIN_FOLDER}/firefox.sh"
-#source "${PLUGIN_FOLDER}/google-chrome.sh"
+source "${PLUGIN_FOLDER}/firefox.sh"
+source "${PLUGIN_FOLDER}/google-chrome.sh"
 
 newsect "Brew && Cask Cleanup Operations"
 source "${SCRIPT_FOLDER}/homebrew-cleanup.sh"
