@@ -15,13 +15,13 @@ msg "Caching password..."
 sudo -K
 sudo true;
 
+source "${SCRIPT_FOLDER}/homebrew-setup.sh"
 source "${SCRIPT_FOLDER}/base-dependencies.sh"
 
 source "${SCRIPT_FOLDER}/osx-setup.sh"
 source "${SCRIPT_FOLDER}/bash-setup.sh"
 
 newsect "Installing Package Managers"
-source "${SCRIPT_FOLDER}/homebrew-setup.sh"
 source "${SCRIPT_FOLDER}/node-setup.sh"
 source "${SCRIPT_FOLDER}/python-setup.sh"
 source "${SCRIPT_FOLDER}/rvm-setup.sh"
